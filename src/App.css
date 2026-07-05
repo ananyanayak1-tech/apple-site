@@ -1,0 +1,1259 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: -.022em;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.navbar{
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  font-size: 13px;
+  background: #f4f4f4;
+}
+
+.nav-icon{
+  width: 18px;
+  cursor: pointer;
+}
+
+.navbar p{
+  cursor: pointer;
+  color: #5b5b5b;
+}
+
+.navbar .nav-btn{
+  width: 18px;
+  cursor: pointer;
+}
+
+.dropdown{
+  display: flex;
+  gap: 80px;
+  padding: 50px 160px;
+  background: white;
+  animation: fade .40s ease;
+  height: 420px;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.dropdown h4{
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+.dropdown .primary-item{
+  font-size: 26px;
+  font-weight: 600;
+  margin: 12px 0;
+  cursor: pointer;
+}
+
+.dropdown .secondary-item{
+  margin: 14px 0;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+@keyframes fade{
+  from{
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-content{
+  transition: 0.3s ease;
+}
+
+.main-content-blur{
+  filter: blur(8px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.nav-message{
+  background-color: #fff;
+  display: flex;
+  gap: 37px;
+  padding: 20px 150px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+.nav-message img{
+  width: 15px;
+  flex-shrink: 0;
+}
+
+.nav-message .msg{
+  font-size: 14px;
+  width: 1000px;
+  white-space: nowrap;
+}
+
+.nav-message .msg .plus{
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  border: 1.4px solid blue;
+  border-radius: 50%;
+}
+
+.nav-message .msg a{
+  text-decoration: none;
+  color: blue;
+}
+
+.nav-message .msg a:hover{
+  text-decoration: underline;
+}
+
+.nav-message .msg .plus p{
+  display: flex;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  color: blue;
+}
+
+.hero{
+  background-color: #f4f4f4;
+  padding: 60px 120px;
+}
+
+.hero .hero-top{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+}
+
+.hero .hero-top h1{
+  font-size: 90px;
+  font-weight: 600;
+}
+
+.hero .hero-top h2{
+  width: 400px;
+  font-size: 30px;
+  text-align: right;;
+}
+
+.hero .hero-top p{
+  color : rgb(68, 68, 255);
+  text-align: right;
+  margin-top: 15px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.hero .hero-top p:hover{
+  text-decoration: underline;
+}
+
+.slider-wrapper{
+  margin-top: 50px;
+  position: relative;
+}
+
+.slider-wrapper .slider{
+  display: flex;
+  gap: 40px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.slider-wrapper .slider::-webkit-scrollbar{
+  display: none;
+}
+
+.slider-wrapper .slider .product{
+  flex: 0 0 auto;
+  width: 150px;
+  text-align: center;
+}
+
+.slider-wrapper .slider .product img{
+  width: 110px;
+}
+
+.slider-wrapper .slider .product p{
+  margin-top: 18px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.slider-wrapper .arrow{
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d7d7d7;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.slider-wrapper .arrow img{
+  width: 18px;
+}
+
+.slider-wrapper .left{
+  left: -30px;
+}
+
+.slider-wrapper .right{
+  right: -30px;
+}
+
+.latest{
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 60px 120px;
+}
+
+.latest h2{
+  width: 100%;
+  margin: auto;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.latest h2 span{
+  color: #6e6e73
+}
+
+.latest .slider-wrapper{
+  position: relative;
+}
+
+.latest .cards{
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.latest .cards::-webkit-scrollbar {
+  display: none;
+}
+
+.latest .cards .card{
+  min-width: 380px;
+  height: 560px;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  transition: .35s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.latest .cards .white{
+  color: white;
+}
+
+.latest .cards .dark{
+  color: #1d1d1f;
+}
+
+.latest .cards .card .overlay{
+  position: absolute;
+  inset: 0;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.latest .cards .card h3{
+  font-size: 30px;
+  margin-bottom: 15px;
+  width: 80%;
+}
+
+.latest .cards .card p{
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.latest .cards .card span{
+  font-size: 15px;
+}
+
+.latest .cards .card .tag{
+  color: #bf4800;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.latest .cards .card .space{
+  height: 30px;
+}
+
+/* ==========================================
+   Apple Store Difference Slider Styles
+   ========================================== */
+.difference-section {
+  width: 100%;
+  background-color:  #f5f5f7;
+  padding: 60px 120px;
+}
+
+.difference-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 30px;
+  letter-spacing: -.022em;
+}
+
+.difference-section h2 span {
+  color: #6e6e73;
+}
+
+.difference-slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.difference-cards {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.difference-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.diff-card {
+  flex-shrink: 0;
+  border-radius: 28px;
+  overflow: hidden; 
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.diff-card:hover {
+  transform: scale(1.01);
+}
+
+.diff-card-img {
+  width: 380px;  
+  height: 300px; 
+  display: block;
+  object-fit: cover; 
+}
+
+.diff-arrow-right {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(232, 232, 237, 0.8);
+  backdrop-filter: blur(8px);
+  font-size: 28px;
+  color: #1d1d1f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.diff-arrow-right:hover {
+  background-color: rgba(210, 210, 215, 0.9);
+}
+
+/* ==========================================
+   Help Is Here Section Layout Styles
+   ========================================== */
+.help-section {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 60px 120px;
+}
+
+.help-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 30px;
+  letter-spacing: -.022em;
+}
+
+.help-section h2 span {
+  color: #6e6e73;
+}
+
+.help-slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.help-cards {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 15px;
+  scrollbar-width: none;
+}
+
+.help-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.help-card {
+  min-width: 480px;
+  height: 500px; 
+  border-radius: 24px;
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.help-card.dark {
+  color: #1d1d1f;
+}
+
+.help-card.white {
+  color: #ffffff;
+}
+
+.help-overlay {
+  position: absolute;
+  inset: 0;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.help-tag {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #6e6e73;
+  margin-bottom: 8px;
+  letter-spacing: 0.03em;
+}
+
+.help-card h3 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 12px;
+  max-width: 90%;
+}
+
+.help-subtitle {
+  font-size: 15px;
+  line-height: 1.4;
+  color: #434344;
+  max-width: 85%;
+}
+
+.help-arrow-right {
+  position: absolute;
+  right: -25px;
+  top: 50%;
+  transform: translateY(-50%) rotate(180deg);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(232, 232, 237, 0.8);
+  backdrop-filter: blur(8px);
+  font-size: 28px;
+  color: #1d1d1f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.help-arrow-right:hover {
+  background-color: rgba(210, 210, 215, 0.9);
+}
+
+/* ==========================================
+   Accessories Section Styles
+   ========================================== */
+
+.accessories-section {
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 60px 120px;
+}
+
+.accessories-section h2 {
+  font-size: 35px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 30px;
+  letter-spacing: -.022em;
+}
+
+.accessories-section h2 span {
+  color: #6e6e73;
+}
+
+.accessories-slider-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.accessories-cards {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.accessories-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.acc-card {
+  flex-shrink: 0;
+  width: 340px;
+  min-height: 560px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+  transition: transform 0.2s ease-in-out;
+}
+
+.acc-card:hover {
+  transform: scale(1.01);
+}
+
+.intro-card {
+  justify-content: flex-start;
+}
+
+.intro-card h3 {
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.intro-card p {
+  font-size: 15px;
+  color: #1d1d1f;
+  line-height: 1.4;
+}
+
+.acc-img-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 280px;
+  margin-bottom: 20px;
+}
+
+.acc-card-img {
+  max-width: 100%;
+  max-height: 280px;
+  object-fit: contain;
+}
+
+.acc-colors {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.acc-color-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.08);
+  display: inline-block;
+}
+
+.acc-color-more {
+  font-size: 14px;
+  color: #6e6e73;
+  margin-left: 4px;
+}
+
+.acc-tag {
+  color: #bf4800;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.acc-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 14px;
+  line-height: 1.3;
+}
+
+.acc-price {
+  font-size: 14px;
+  color: #6e6e73;
+  margin-top: auto;
+}
+
+.explore-card {
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.explore-card h3 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.explore-img {
+  max-width: 100%;
+  max-height: 320px;
+  object-fit: contain;
+}
+
+.acc-arrow-left,
+.acc-arrow-right {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(232, 232, 237, 0.8);
+  backdrop-filter: blur(8px);
+  font-size: 28px;
+  color: #1d1d1f;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  z-index: 10;
+}
+
+.acc-arrow-left {
+  left: -25px;
+}
+
+.acc-arrow-right {
+  right: -25px;
+}
+
+.acc-arrow-left:hover,
+.acc-arrow-right:hover {
+  background-color: rgba(210, 210, 215, 0.9);
+}
+
+/* ==========================================
+   Loud and Clear Section Styles
+   ========================================== */
+  .loud{
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 60px 120px;
+}
+
+.loud h2{
+  width: 100%;
+  margin: auto;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.loud h2 span{
+  color: #6e6e73
+}
+
+.loud .slider-wrapper{
+  position: relative;
+}
+
+.loud .cards{
+  display: flex;
+  gap: 25px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.loud .cards::-webkit-scrollbar {
+  display: none;
+}
+
+.loud .cards .card{
+  width: 7cm;
+  height: 11.4cm;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  transition: .35s;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+}
+
+.loud .cards .card.card-first{
+  width: 9cm;
+  height: 11.4cm;
+  padding: 30px;
+  justify-content: flex-start;
+}
+
+.loud .cards .card .card-img-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 200px;
+}
+
+.loud .cards .card .card-img{
+  max-width: 100%;
+  max-height: 240px;
+  object-fit: contain;
+}
+
+.loud .cards .card.card-first .card-img-wrapper{
+  align-items: flex-end;
+  min-height: 260px;
+  margin-top: 20px;
+}
+
+.loud .cards .card.card-first .card-img{
+  max-height: 300px;
+  max-width: 95%;
+}
+
+.loud .cards .white{
+  color: white;
+}
+
+.loud .cards .dark{
+  color: #1d1d1f;
+}
+
+.loud .cards .card .overlay{
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.loud .cards .card h3{
+  font-size: 22px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.loud .cards .card p{
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+.loud .cards .card.card-first h3{
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  width: 100%;
+  line-height: 1.25;
+}
+
+.loud .cards .card.card-first p{
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.loud .cards .card span{
+  font-size: 15px;
+}
+
+.loud .cards .card .tag{
+  color: #bf4800;
+  font-weight: 400;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.loud .cards .card .space{
+  height: 30px;
+}
+
+.loud .arrow{
+  position: absolute;
+  top: 40%;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 50%;
+  background-color: #d7d7d7;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.loud .arrow img{
+  width: 18px;
+}
+
+.loud .left{
+  left: -30px;
+}
+
+.loud .right{
+  right: -30px;
+}
+
+/* ==========================================
+   The Apple Experience Section Styles
+   ========================================== */
+  .experience{
+  width: 100%;
+  background-color: #f5f5f7;
+  padding: 50px 80px;
+}
+
+.experience h2{
+  width: 100%;
+  margin: auto;
+  font-size: 28px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin-bottom: 24px;
+}
+
+.experience h2 span{
+  color: #6e6e73;
+  font-weight: 600;
+}
+
+.experience .slider-wrapper{
+  position: relative;
+}
+
+.experience .cards{
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: none;
+}
+
+.experience .cards::-webkit-scrollbar {
+  display: none;
+}
+
+.experience .cards .card{
+  min-width: 380px;
+  max-width: 380px;
+  height: 420px;
+  border-radius: 18px;
+  background-color: #ffffff;
+  padding: 28px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* Text block: title + subtitle sit together as one bold heading unit */
+.experience .cards .card-text{
+  flex-shrink: 0;
+  padding: 0 28px;
+}
+
+.experience .cards .tag{
+  color: #6e6e73;
+  font-weight: 600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 6px;
+}
+
+.experience .cards .card-title{
+  font-size: 21px;
+  font-weight: 700;
+  color: #1d1d1f;
+  margin-bottom: 6px;
+  line-height: 1.25;
+  display: block;
+}
+
+.experience .cards .card-title.gradient{
+  background: linear-gradient(90deg, #2b6cff, #a259ff, #ff5c5c, #ff9500);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.experience .cards .card-subtitle{
+  font-size: 21px;
+  font-weight: 700;
+  color: #1d1d1f;
+  line-height: 1.25;
+  display: block;
+}
+
+.experience .cards .card-img-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 0;
+  margin-top: 16px;
+  width: 100%;
+}
+
+.experience .cards .card-img{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+.experience .arrow{
+  position: absolute;
+  top: 45%;
+  width: 44px;
+  height: 44px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #1d1d1f;
+}
+
+.experience .left{
+  left: -22px;
+}
+
+.experience .right{
+  right: -22px;
+}
+/* ==========================================
+   Savings and Offers Section Styles
+   ========================================== */
+.savings{
+  width: 100%;
+  background-color: #f4f4f4;
+  padding: 60px 120px;
+}
+
+.savings h2{
+  width: 100%;
+  margin: auto;
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.savings h2 span{
+  color: #6e6e73
+}
+
+.savings-cards{
+  display: flex;
+  gap: 25px;
+}
+
+.savings-cards .card{
+  width: 420px;
+  height: 480px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  padding: 32px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.08);
+}
+
+.savings-cards .card-text{
+  padding: 0 32px;
+  flex-shrink: 0;
+}
+
+.savings-cards .tag{
+  color: #6e6e73;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 8px;
+}
+
+.savings-cards .card-title{
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  line-height: 1.3;
+  margin-bottom: 20px;
+}
+
+.savings-cards .card-img-wrapper{
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: 0;
+  width: 100%;
+}
+
+.savings-cards .card-img{
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
+/* ================================
+   Apple Store Footer - Styles
+   ================================ */
+
+.apple-footer {
+  background-color: #f5f5f7;
+  color: #6e6e73;
+  font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue",
+    Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.58;
+  padding: 22px 0 0;
+}
+
+.apple-footer a {
+  color: #6e6e73;
+  text-decoration: none;
+}
+
+.apple-footer a:hover {
+  color: #1d1d1f;
+  text-decoration: underline;
+}
+
+.apple-footer__inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 0 22px;
+}
+
+/* -------- Quick Links -------- */
+.apple-footer__quicklinks {
+  padding: 20px 0 32px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+.apple-footer__quicklinks h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0 0 16px;
+}
+
+.apple-footer__quicklink-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.apple-footer__pill {
+  display: inline-block;
+  padding: 9px 18px;
+  border: 1px solid #6e6e73;
+  border-radius: 20px;
+  font-size: 12px;
+  color: #1d1d1f;
+  white-space: nowrap;
+}
+
+.apple-footer__pill:hover {
+  border-color: #1d1d1f;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+/* -------- Legal disclaimers -------- */
+.apple-footer__legal {
+  padding: 24px 0;
+}
+
+.apple-footer__legal p,
+.apple-footer__legal ol {
+  margin: 0 0 16px;
+}
+
+.apple-footer__legal ol {
+  padding-left: 18px;
+}
+
+.apple-footer__legal li {
+  margin-bottom: 8px;
+}
+
+.apple-footer__legal a {
+  text-decoration: underline;
+}
+
+.apple-footer__location-note {
+  padding: 4px 0 20px;
+  border-bottom: 1px solid #d2d2d7;
+}
+
+/* -------- Breadcrumb -------- */
+.apple-footer__breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 16px 0;
+  font-size: 12px;
+}
+
+/* CHANGED: .apple-logo is now an <img>, not emoji text */
+.apple-footer__breadcrumb .apple-logo {
+  height: 14px;
+  width: auto;
+  display: block;
+}
+
+.apple-footer__breadcrumb span.sep {
+  color: #6e6e73;
+}
+
+.apple-footer__breadcrumb strong {
+  color: #6e6e73;
+  font-weight: 400;
+}
+
+/* -------- Link columns -------- */
+.apple-footer__columns {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+  padding: 8px 0 28px;
+}
+
+.apple-footer__column h3 {
+  font-size: 12px;
+  font-weight: 600;
+  color: #1d1d1f;
+  margin: 0 0 8px;
+}
+
+.apple-footer__column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.apple-footer__column li {
+  margin-bottom: 8px;
+}
+
+.apple-footer__column--split {
+  margin-top: 20px;
+}
+
+/* -------- More ways to shop -------- */
+.apple-footer__more-ways {
+  padding: 16px 0;
+  border-top: 1px solid #d2d2d7;
+}
+
+/* -------- Bottom bar -------- */
+.apple-footer__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 0 24px;
+  border-top: 1px solid #d2d2d7;
+  font-size: 12px;
+}
+
+.apple-footer__bottom-links {
+  display: flex;
+  gap: 4px;
+}
+
+.apple-footer__bottom-links span.divider {
+  color: #d2d2d7;
+  margin: 0 2px;
+}
+
+.apple-footer__country {
+  color: #6e6e73;
+}
