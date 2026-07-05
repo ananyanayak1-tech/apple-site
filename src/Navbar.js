@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import './App.css';
 
 import logo from './assets/apple-logo.png';
@@ -81,7 +80,7 @@ function Navbar({active, setActive}){
         <div className="nav-wrapper" onMouseLeave={() => setActive("")}>
     
         <nav className="navbar">
-            <img src={logo} className="nav-icon"></img>
+            <img src={logo} className="nav-icon" alt="Apple logo"/>
             {
                menu.map((item)=>(
                  <p key={item} 
@@ -91,8 +90,8 @@ function Navbar({active, setActive}){
                ))
             }
 
-            <img src={search} className="nav-btn"/>
-            <img src={bag} className="nav-btn"/>
+            <img src={search} className="nav-btn" alt="Search"/>
+            <img src={bag} className="nav-btn" alt="Bag"/>
         </nav>
 
         <div onMouseDown={() => setActive("")}/> 

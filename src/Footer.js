@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 import './App.css';
 
@@ -108,25 +109,15 @@ function Footer() {
         {/* Legal disclaimers (placeholder copy — see note above) */}
         <div className="apple-footer__legal">
           <p>
-            <sup>◇</sup> No Cost EMI offers are available on eligible products purchased with
-            participating cards over select tenures. Monthly installment amounts are rounded and
-            set by your card issuer, and minimum spend thresholds may apply. This offer excludes
-            Business, Education, and Corporate Employee Purchase Plan pricing, and may be changed
-            or withdrawn at any time. <a href="#">See terms</a>.
+            <sup>◇</sup> No Cost EMI is available with the purchase of an eligible product made using qualifying cards on 3- or 6-month tenures from most leading card issuers. Monthly pricing is rounded to the nearest rupee. Exact pricing will be provided by your card issuer, subject to your card issuer’s terms and conditions. Minimum order spend applies as per your card issuer’s threshold. No Cost EMI is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Card eligibility is subject to terms and conditions between you and your card issuer. Offer may be revised or withdrawn at any time without any prior notice.<a href="#">Terms apply</a>.
           </p>
 
           <p>
-            <sup>Δ</sup> Instant cashback is offered on qualifying purchases made with select
-            partner bank cards, subject to a minimum order value. Cashback is limited to a set
-            number of orders within a rolling period and is calculated on the transaction total
-            after any discounts or trade-in credit. Cancellations or adjustments may result in
-            cashback being recalculated or clawed back. This offer excludes Business, Education,
-            and Corporate Employee Purchase Plan pricing. <a href="#">Additional terms apply</a>.
+            <sup>Δ</sup>  Instant cashback is available with the purchase of an eligible product with qualifying American Express, Axis Bank and ICICI Bank cards only. Minimum transaction value of ₹10001.00 applies. Learn more about instant cashback amounts and eligible devices. Instant cashback is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card issuer. Total transaction value is calculated after any trade-in credit or eligible discount is applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant cashback being recalculated, and any refund may be adjusted to account for instant cashback clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. Additional terms apply.(opens in new window) Instant cashback is not available to Business customers and cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant cashback. <a href="#">Additional terms apply</a>.
           </p>
 
           <p>
-            <sup>±</sup> Education pricing is open to current and newly admitted students, their
-            parents, and teaching staff at all levels. <a href="#">See terms</a> for details.
+            <sup>±</sup>  Available to current and newly accepted college students, parents buying for college students, and teachers and staff at all levels. <a href="#">See terms</a> for details.
           </p>
 
           <p>

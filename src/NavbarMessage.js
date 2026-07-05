@@ -22,14 +22,14 @@ function NavbarMessage(){
 
     return(
         <div className="nav-message">
-            <img src={left} onClick={handlePrev} style={{ cursor: 'pointer' }}/>
+            <img src={left} onClick={handlePrev} style={{ cursor: 'pointer' }} alt="Previous"/>
             <div className="msg">
                 <p>{messages[currentIndex]}</p>
                 <div className="plus">
                     <p>+</p>
                 </div>
             </div>
-            <img src={right} onClick={handleNext} style={{ cursor: 'pointer' }}/>
+            <img src={right} onClick={handleNext} style={{ cursor: 'pointer' }} alt="Next"/>
         </div>
     )
 }
