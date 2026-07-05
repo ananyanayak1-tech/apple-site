@@ -18,7 +18,7 @@ function DropdownMenu({data}){
                          {
                             values?.map((item, index) => (
                                 <p key={index} 
-                                className={columnIndex == 0 ? "primary-item" : "secondary-item"}>{item}</p>
+                                className={columnIndex === 0 ? "primary-item" : "secondary-item"}>{item}</p>
                             ))
                          }
 
